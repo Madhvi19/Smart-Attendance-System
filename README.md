@@ -1,5 +1,6 @@
 # SWE_Project
 This repo is a project for the course Software Engineering. 
+<br/>
 Collaborators
 - Himansh Sheoran
 - Maanik Arora
