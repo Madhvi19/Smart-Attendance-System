@@ -20,6 +20,10 @@ The main purpose of this project is to develop a Face Recognition Based Automate
 # Feature Extraction
 This uses images present in output_bbox directory as an input extract the feature vectors of each image using opencv and dlib. For each image we get a feature vector of size (68,2), these are then stored in the disk after pickling as face_feature.pickle
 
+# Face Recognition
+This uses the extracted feature vectors pickled in face_feature.pickle as an input. We have used Resnet state of the art model to recognize the faces.
+
+
 ## Training/Validation Steps
 
 - download model-weights for face detector from Code/model-weights.sh
@@ -33,5 +37,3 @@ This uses images present in output_bbox directory as an input extract the featur
 - download pretrained model-weights from link https://drive.google.com/open?id=10MGSROvLdKLbCV0586qF0jesFDgnhJit
 - run test.py
 
-# Face Recognition
-This uses the extracted feature vectors pickled in face_feature.pickle as an input. We have used Resnet state of the art model to recognize the faces.
