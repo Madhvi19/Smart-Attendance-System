@@ -13,14 +13,15 @@ Collaborators
 
 The main purpose of this project is to develop a Face Recognition Based Automated Student Attendance System.  We will be building a system that will be  able  to  detect  and  recognize  frontal  faces  of  students  in  classroom,  and  then mark their respective attendance.  The system is exclusively designed for marking attendance in various educational institutes like in colleges and schools.  The aim of this project is to eliminate the traditional system of Manual Attendance System which is usually a time consuming process with chances of human error and replace it with Automated Attendance System.
 
+# Network Architecture
 
-# Face Detection
+## Face Detection
  This detects faces in all the images present in # train folder which contain all the images for training.It saves the output ,which is bounding boxes detected in the original images,in folder output_bbox and the final cropped out images of respective bounding boxes in the folder final_bbox
  
-# Feature Extraction
+## Feature Extraction
 This uses images present in output_bbox directory as an input extract the feature vectors of each image using opencv and dlib. For each image we get a feature vector of size (68,2), these are then stored in the disk after pickling as face_feature.pickle
 
-# Face Recognition
+## Face Recognition
 This uses the extracted feature vectors pickled in face_feature.pickle as an input. We have used Resnet state of the art model to recognize the faces.
 
 # Training steps
