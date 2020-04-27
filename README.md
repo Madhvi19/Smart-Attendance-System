@@ -16,11 +16,11 @@ The main purpose of this project is to develop a Face Recognition Based Automate
 
 # Face Detection
  This detects faces in all the images present in # train folder which contain all the images for training.It saves the output ,which is bounding boxes detected in the original images,in folder output_bbox and the final cropped out images of respective bounding boxes in the folder final_bbox
- 
+ ![alt text](https://github.com/Hooligan10/SWE_Project/blob/master/Code/output_bbox/6.jpg)
 # Feature Extraction
 This uses images present in output_bbox directory as an input extract the feature vectors of each image using opencv and dlib. For each image we get a feature vector of size (68,2), these are then stored in the disk after pickling as face_feature.pickle
 ![alt text](https://github.com/Hooligan10/SWE_Project/blob/master/Code/face_feature_visual/6_010.jpg?raw=true)
-
+![alt text](https://github.com/Hooligan10/SWE_Project/blob/master/Code/final_bbox/6_010.jpg)
 # Face Recognition
 This uses the extracted feature vectors pickled in face_feature.pickle as an input. We have used Resnet state of the art model to recognize the faces.
 
