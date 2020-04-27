@@ -11,7 +11,7 @@ class BoundingBox(object):
 		for i in sorted(os.listdir('./test_images/')):
 			if '.jpg' in i:
 				print('Finding faces in image',i)
-				os.system("python yoloface/yoloface.py --image test_images/"+i+" --output-dir output_bbox/")
+				os.system("python yoloface/yoloface.py --image train_images/"+i+" --output-dir output_bbox/")
 		print('All bounding boxes extracted successfully')
 
 if __name__ == '__main__':
