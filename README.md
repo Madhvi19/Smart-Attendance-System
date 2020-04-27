@@ -23,6 +23,7 @@ This uses images present in output_bbox directory as an input extract the featur
 ![alt text](https://github.com/Hooligan10/SWE_Project/blob/master/Code/final_bbox/6_010.jpg)
 # Face Recognition
 This uses the extracted feature vectors pickled in face_feature.pickle as an input. We have used Resnet state of the art model to recognize the faces.
+<br\>
 ![alt text](https://github.com/Hooligan10/SWE_Project/blob/master/Code/final_test_image.png)
 # Training steps
 Training steps (same to be done for validation):
