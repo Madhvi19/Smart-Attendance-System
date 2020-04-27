@@ -14,7 +14,7 @@ from skimage.transform import rescale, resize
 from skimage.io import imsave, imread
 
 class FaceLandmarksDataset():
-    def __init__(self, root_dir, model_type="recognition", transform=None):
+    def __init__(self, root_dir, model_type="classification"):
         self.data_list = glob.glob(osp.join(root_dir, '*.jpg'))
         labels = []
         for d in self.data_list:
@@ -35,20 +35,18 @@ class FaceLandmarksDataset():
         
         # Image
         img = imread(image)
+	h,w,c = img.shape
         img1 = resize(img, (224,224,3))
         image = torch.from_numpy(img1)
-#         image = imread(img1)
-#         print("sahpe",image2.shape)
-        # One Hot Labels
+
+        # Labels
         label = self.labels[idx]
 
-        gt_label = np.zeros((11),np.float32)
         for i in range(11):
             if int(label) == i:
-                gt_label[i] = 1.0
-
+                gt_label = i
         
         # Sample
         sample = {'image': image, 'gt_label': gt_label}
-        print(sample)
+
         return sample
