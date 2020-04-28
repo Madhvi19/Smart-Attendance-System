@@ -37,4 +37,4 @@ note: all final training images are stored in final_bbox and features are stored
 
 # Testing
 1) download pretrained model-weights from https://drive.google.com/open?id=10MGSROvLdKLbCV0586qF0jesFDgnhJit
-2) run test.py
+2) run test.py --shape-predictor shape_predictor_68_face_landmarks.dat --image IMAGE_PATH
