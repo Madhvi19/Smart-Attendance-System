@@ -1,4 +1,4 @@
-# SWE_Project
+# Smart Attendance System
 This repo is a project for the course Software Engineering. 
 <br/>
 Team No: 24
